@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3215ba12-9cc0-4dbb-b8de-b5463486d2fd",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37643492"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3001/blog/v1/post/posts/default"
+			},
+			"response": []
+		},
+		{
+			"name": "List Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I5NjFhNGQxOWQyZmFkODU0MmZjZDYiLCJpYXQiOjE3NDAyMDI0NzUsImV4cCI6MTc0MDIwNjA3NX0.Xjwqx2R-wfmwyiMgHZtrMVyZhPaSuCffBghCf6GHoes"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/blog/v1/post/posts/Práctica Supervisada"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Comment",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List Comments Post",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comments",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
